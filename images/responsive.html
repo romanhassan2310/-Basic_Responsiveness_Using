@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+    <style>
+        h1{
+            background-color: aquamarine;
+            display: flex;
+            justify-content: center;
+            color: darkgray;
+            font-size: 2.5em;
+        }
+        ol{
+            background-color:red;
+            font-size: 1.25em;
+            color: silver
+        }
+        body{
+            border: 2px solid skyblue;
+            max-width: 1140px;
+            margin: 0 auto;
+           
+            
+            
+        }
+        .navbar{
+            display: flex;
+           /* gap: 20px;*/
+           
+            font-size: 2em;
+          justify-content: space-between;
+        }
+        .navbar a{
+            text-decoration: none;
+            padding:10px 20px 20px 10px;
+        }
+        .image-container{
+            display: flex;
+            
+        }
+        .image-container div{
+            width: 50%;
+            
+        }
+        .image-container img{
+            width: 100%;
+            
+        }
+        @media screen and (max-width: 576px) {
+            .image-container{
+                flex-direction: column-reverse;
+            }
+            .image-container div{
+                width: 100%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a  href="">login</a>
+            <a  href="">About</a>
+        </div>
+        <h1>Responsive Website</h1>
+       
+        <ol>
+            <li>viewport meta tag</li>
+            <li>CSS Relative Unit</li>
+            <li>Body max width and horizontal center align</li>
+            <li>Image fluid</li>
+            <li>Two column flex and use media query with flex direction column</li>
+            <li>Multi column</li>
+            <li>Menu Responsive: will need Javascript </li>
+        </ol>
+    </header>
+    <main>
+        <div class="image-container">
+            <div>
+                <img src="new folder/Food.webp" alt=""> 
+            </div>
+            <div>
+                <img src="new folder/tiger.jpeg" alt="">
+            </div>
+        </div>
+        <div>
+         <input type="text"  name="" id="" >
+    </div>
+        
+       
+    </main>
+    <div>
+         <input type="text" placeholder="Name" name="" id="" >
+    </div>
+    
+</body>
+</html>
